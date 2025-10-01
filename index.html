@@ -1,0 +1,64 @@
+<!doctype html>
+<section class="hero">
+<div class="hero-left">
+<h2>Fast. Simple. Secure.</h2>
+<p>Search trains, book tickets and travel with ease.</p>
+</div>
+<form class="search-card" action="search.html" method="GET" id="searchForm">
+<div class="row">
+<label>From</label>
+<input name="from" id="from" placeholder="e.g. New Delhi (NDLS)" required>
+</div>
+<div class="row">
+<label>To</label>
+<input name="to" id="to" placeholder="e.g. Chennai (MAS)" required>
+</div>
+<div class="row small">
+<label>Date</label>
+<input name="date" id="date" type="date" required>
+</div>
+<div class="row small">
+<label>Class</label>
+<select name="cls" id="cls">
+<option value="sleeper">Sleeper (SL)</option>
+<option value="ac3">AC 3 Tier (3A)</option>
+<option value="ac2">AC 2 Tier (2A)</option>
+<option value="cc">Chair Car (CC)</option>
+</select>
+</div>
+<div class="row small">
+<label>Passengers</label>
+<input name="pax" id="pax" type="number" value="1" min="1" max="6">
+</div>
+<div class="row full">
+<button class="btn btn-primary" type="submit">Search Trains</button>
+</div>
+</form>
+</section>
+
+
+<section class="quick-links">
+<div class="card">
+<h3>Popular Routes</h3>
+<ul>
+<li>New Delhi ➜ Mumbai</li>
+<li>Chennai ➜ Bangalore</li>
+<li>Kolkata ➜ Patna</li>
+</ul>
+</div>
+<div class="card">
+<h3>Support</h3>
+<p>24x7 customer support • contact@railease.example</p>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© 2025 RailEase</div>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
