@@ -1,5 +1,6 @@
 
-![Uploading chain cred.jpg…]()
+![chain cred](https://github.com/user-attachments/assets/4b52ce0e-26b2-4a85-a15e-ad8683e7327f)
+
 
 # 🔗 Chain-Cred: A Web3 Powered Trusted Freelance Finder
 
