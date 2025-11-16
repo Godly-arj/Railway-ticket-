@@ -1,4 +1,4 @@
-![Chain-Cred Banner](chain%20cred.jpg)
+![Chain-Cred Banner](chain cred.jpg)
 
 # 🔗 Chain-Cred: A Web3 Powered Trusted Freelance Finder
 
