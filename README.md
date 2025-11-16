@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="chain cred.jpg" alt="Chain-Cred Banner" width="100%" />
-</p>
+
+![Uploading chain cred.jpg…]()
 
 # 🔗 Chain-Cred: A Web3 Powered Trusted Freelance Finder
 
