@@ -1,20 +1,20 @@
 ![cred chain 1](https://github.com/user-attachments/assets/a865bd95-771c-4a26-9958-5eb602f2a792)
 
-# ChainCred: Decentralized Reputation for Freelancers ✨
+# CredChain: Decentralized Reputation for Freelancers 
 
-ChainCred is a **Web3-powered trust and reputation system** designed to empower freelancers by decentralizing their work history and professional identity. By storing verifiable **project proofs** and **client reviews** on the blockchain, we eliminate the risks associated with centralized platforms like fake portfolios, unverified experience, and platform lock-in.
+CredChain is a **Web3-powered trust and reputation system** designed to empower freelancers by decentralizing their work history and professional identity. By storing verifiable **project proofs** and **client reviews** on the blockchain, we eliminate the risks associated with centralized platforms like fake portfolios, unverified experience, and platform lock-in.
 
-## 💡 Project Overview and Objectives
+##  Project Overview and Objectives
 
-The core objective of ChainCred is to create an **immutable, transparent, and portable professional identity** for every freelancer.
+The core objective of CredChain is to create an **immutable, transparent, and portable professional identity** for every freelancer.
 
 By leveraging the **Moonbeam Parachain** (EVM compatibility on Polkadot), we enable on-chain verification of completed work and client feedback, giving freelancers full **ownership** over their reputation data. Our system shifts trust from centralized platforms to **cryptographic proof** and **verified on-chain interactions**.
 
 ---
 
-## 🛑 The Problem ChainCred Solves
+##  The Problem CredChain Solves
 
-| Issue | Centralized Platform Risk | ChainCred Solution |
+| Issue | Centralized Platform Risk | CredChain Solution |
 | :--- | :--- | :--- |
 | **Fake Portfolios** | Easy to falsify claims or credentials. | **Hash Proofs** and **Smart Verification** ensure work integrity. |
 | **No Code Provenance** | No transparent way to prove code authorship. | Immutable linkage of work hash to the freelancer's On-chain Identity. |
@@ -23,9 +23,9 @@ By leveraging the **Moonbeam Parachain** (EVM compatibility on Polkadot), we ena
 
 ---
 
-## 🛠️ Solution: Core Mechanics
+##  Solution: Core Mechanics
 
-ChainCred addresses these problems through a suite of verifiable, on-chain mechanics:
+CredChain addresses these problems through a suite of verifiable, on-chain mechanics:
 
 * **On-chain Identity**: Users authenticate via **MetaMask** on the Moonbeam network, tying their wallet address to a persistent, verifiable identity.
 * **GitHub Hashing (Hash Proofs)**: Freelancers submit a cryptographic hash proof of their project deliverable (e.g., a GitHub repository or IPFS file) to the smart contract, immutably linking the work to their identity.
@@ -37,9 +37,9 @@ ChainCred addresses these problems through a suite of verifiable, on-chain mecha
 
 ---
 
-## ✨ Features
+##  Features
 
-The ChainCred platform provides the following core features:
+The CredChain platform provides the following core features:
 
 1.  **On-chain Portfolio**: A decentralized and immutable record of all completed, hash-proofed projects.
 2.  **Client-authenticated Reviews**: Reviews submitted by verified clients are permanently stored and linked to the project.
@@ -50,19 +50,19 @@ The ChainCred platform provides the following core features:
 
 ---
 
-## 🚀 Dependencies and Technologies Used
+##  Dependencies and Technologies Used
 
 | Category | Technology | Purpose |
 | :--- | :--- | :--- |
 | **Blockchain** | **Moonbeam Parachain** | EVM-compatible environment on Polkadot for smart contract deployment. |
 | **Wallet/Auth** | **MetaMask** | Primary user authentication and transaction signing. |
 | **Smart Contract** | **Solidity** | Language used for writing the core reputation logic. |
-| **Frontend** | React, Next.js, Web3.js | User interface for profile management, project submission, and review. |
-| **Data Storage** | **IPFS** (or similar) | Decentralized storage for project deliverables and metadata. |
+| **Frontend** | **HMTL, Tailwind css , Web3.js** | User interface for profile management, project submission, and review. |
+| **Data Storage** | **IPFS** | Decentralized storage for project deliverables and metadata. |
 
 ---
 
-## ⚙️ Smart Contract Functions (Solidity)
+##  Smart Contract Functions (Solidity)
 
 The core business logic is managed by the following key functions:
 
@@ -77,9 +77,9 @@ The core business logic is managed by the following key functions:
 
 ---
 
-## 🌐 Polkadot Relevance & Web3 Integration
+##  Polkadot Relevance & Web3 Integration
 
-ChainCred is built to leverage the **Web3 ecosystem**, specifically Polkadot's interoperable network structure:
+CredChain is built to leverage the **Web3 ecosystem**, specifically Polkadot's interoperable network structure:
 
 * **Built on Moonbeam**: We utilize the Moonbeam Parachain, which provides **EVM compatibility**, allowing us to deploy standard Solidity smart contracts while operating within the Polkadot ecosystem.
 * **Web3 RPC**: All client-side interactions (MetaMask) communicate with the Moonbeam network via standard Web3 RPC calls.
@@ -87,11 +87,11 @@ ChainCred is built to leverage the **Web3 ecosystem**, specifically Polkadot's i
 
 ---
 
-## 🔨 Instructions for Setup and Usage
+##  Instructions for Setup and Usage
 
 ### Prerequisites
 
-* Node.js (v18+)
+
 * Yarn or npm
 * **MetaMask** browser extension configured for the **Moonbeam Development Network** (or a testnet).
 
@@ -99,8 +99,8 @@ ChainCred is built to leverage the **Web3 ecosystem**, specifically Polkadot's i
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/SR-005/chain-cred.git](https://github.com/SR-005/chain-cred.git)
-    cd chain-cred
+    git clone https://github.com/SR-005/cred-chain
+    cd cred-chain
     ```
 
 2.  **Install dependencies:**
@@ -120,32 +120,24 @@ ChainCred is built to leverage the **Web3 ecosystem**, specifically Polkadot's i
     # or npm run dev
     ```
 
-The application will typically start at `http://localhost:3000`. Connect your MetaMask wallet to the Moonbeam network to begin using ChainCred.
+The application will typically start at `http://localhost:3000`. Connect your MetaMask wallet to the Moonbeam network to begin using CredChain.
 
 ---
 
-## 🖼️ Media Showcase
+## Video Walkthrough and Images
 
-| Description | Link/Image Placeholder |
-| :--- | :--- |
-| **Demo Video** | Insert YouTube or Vimeo link to project demo video here. |
-| **App Screenshot 1 (Profile)** | Insert image of the Decentralized Profile here. |
-| **App Screenshot 2 (Verification)** | Insert image of the Project Hash Proof verification interface here. |
+
 
 ---
 
-## 🧑‍💻 Team
+## Team
 
 This project was developed by:
 
-* Allen Jude
-* Sreeram V Gopal
-* Alwin Emmanuel Sebastian
-* Arjun Shiju
+* [Sreeram V Gopal](https://github.com/SR-005)
+* [Alwin Emmanuel Sebastian](https://github.com/Alwin42)
+* [Allen Jude](https://github.com/Ajallen14)
+* [Arjun Shiju](https://github.com/Godly-arj)
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**. See the official license link for details:
-[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/)
