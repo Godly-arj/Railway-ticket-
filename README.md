@@ -1,119 +1,151 @@
+![cred chain 1](https://github.com/user-attachments/assets/a865bd95-771c-4a26-9958-5eb602f2a792)
 
-![chain cred](https://github.com/user-attachments/assets/ec150fdb-9c81-4b60-9ff2-6e9ae7bb9f10)
+# ChainCred: Decentralized Reputation for Freelancers ✨
 
-# Chain-Cred: Decentralized Supply Chain Credibility Platform
+ChainCred is a **Web3-powered trust and reputation system** designed to empower freelancers by decentralizing their work history and professional identity. By storing verifiable **project proofs** and **client reviews** on the blockchain, we eliminate the risks associated with centralized platforms like fake portfolios, unverified experience, and platform lock-in.
 
-## Title Description
+## 💡 Project Overview and Objectives
 
-**Chain-Cred** is an innovative platform leveraging Distributed Ledger Technology (DLT) to revolutionize **Supply Chain Finance (SCF)**. It establishes a transparent, immutable system for verifying trade transactions and calculating real-time, dynamic **credit and credibility scores** for all participants in a supply chain ecosystem.
+The core objective of ChainCred is to create an **immutable, transparent, and portable professional identity** for every freelancer.
 
-***
+By leveraging the **Moonbeam Parachain** (EVM compatibility on Polkadot), we enable on-chain verification of completed work and client feedback, giving freelancers full **ownership** over their reputation data. Our system shifts trust from centralized platforms to **cryptographic proof** and **verified on-chain interactions**.
 
-## Detailed Project Description
+---
 
-The current landscape of supply chain finance often suffers from a lack of transparency, slow verification processes, and reliance on centralized credit bureaus, disproportionately affecting Small and Medium Enterprises (SMEs). Chain-Cred addresses these shortcomings by utilizing a **blockchain ledger** to record every transaction, invoice, and payment history securely.
+## 🛑 The Problem ChainCred Solves
 
-The core functionality involves smart contracts that automatically assess the risk and credibility of a supplier or buyer based on their on-chain activity. This real-time, objective scoring mechanism facilitates faster, more secure, and cheaper financing options (like invoice discounting and factoring) for suppliers, ultimately optimizing working capital across the entire supply chain.
+| Issue | Centralized Platform Risk | ChainCred Solution |
+| :--- | :--- | :--- |
+| **Fake Portfolios** | Easy to falsify claims or credentials. | **Hash Proofs** and **Smart Verification** ensure work integrity. |
+| **No Code Provenance** | No transparent way to prove code authorship. | Immutable linkage of work hash to the freelancer's On-chain Identity. |
+| **Client Trust Issues** | Reviews can be manipulated or deleted by central entities. | **Client-authenticated Reviews** are recorded immediately on-chain. |
+| **High Platform Fees** | Platforms take significant cuts from earnings. | Reduced reliance on intermediaries and their fee structures. |
 
-***
+---
 
-## Objectives
+## 🛠️ Solution: Core Mechanics
 
-As required for the submission, the key objectives and goals of the Chain-Cred project are:
+ChainCred addresses these problems through a suite of verifiable, on-chain mechanics:
 
-* **Project Overview and Objectives (Submission Requirement):** To design and implement a secure, decentralized platform that increases financial transparency and trust within complex supply chains.
-* **Financial Inclusion:** To provide reliable, data-driven credibility scores to SMEs and suppliers who may be underserved by traditional financial institutions.
-* **Process Optimization:** To automate and accelerate the documentation, verification, and settlement processes in supply chain financing through smart contracts.
+* **On-chain Identity**: Users authenticate via **MetaMask** on the Moonbeam network, tying their wallet address to a persistent, verifiable identity.
+* **GitHub Hashing (Hash Proofs)**: Freelancers submit a cryptographic hash proof of their project deliverable (e.g., a GitHub repository or IPFS file) to the smart contract, immutably linking the work to their identity.
+* **Smart Verification**: The system uses the on-chain hash proof to verify that the work presented hasn't been modified since it was submitted. 
+* **Review Authorization**: Clients who have interacted with a freelancer submit a review, which is immediately recorded on-chain without further approval, ensuring client-authenticated feedback.
+* **Skill Search**: Profiles and projects are indexed to allow clients to search for **verified skills** based on successful, reviewed project history.
+* **Project Badges (Badge System)**: Upon project completion, verifiable badges representing certain skills or milestones can be minted and linked to the freelancer's profile.
+* **Decentralized Profiles**: The freelancer's complete reputation (verified identity, projects, reviews, and badges) is stored immutably on the blockchain. 
 
-***
+---
 
-## Features
+## ✨ Features
 
-Chain-Cred provides the following essential functionalities:
+The ChainCred platform provides the following core features:
 
-* ✅ **Immutable Transaction Ledger:** All purchase orders, invoices, and payment confirmations are recorded on the blockchain, creating a tamper-proof audit trail.
-* 📊 **Dynamic Credibility Scoring:** An algorithmic system updates participant creditworthiness in real-time based on successful trade fulfillment and payment history recorded on the chain.
-* 📜 **Smart Contract Integration:** Utilizes Smart Contracts for automated escrow, payment settlement, and financing agreement execution, reducing counterparty risk.
-* 🔗 **Decentralized Identity (DID):** Secure and permissioned onboarding of Buyers, Suppliers, and Financial Institutions using verifiable digital credentials.
-* 🔍 **Data Analytics API:** Provides financial institutions with secure access to validated, real-time trade data for informed risk assessment and lending decisions.
-* 🔒 **Permissioned Access:** Ensures that sensitive commercial data is only shared among authorized participants (e.g., the buyer, supplier, and financing entity).
+1.  **On-chain Portfolio**: A decentralized and immutable record of all completed, hash-proofed projects.
+2.  **Client-authenticated Reviews**: Reviews submitted by verified clients are permanently stored and linked to the project.
+3.  **Hash Proofs**: Cryptographic proofs of work deliverables ensure integrity and prevent tampering.
+4.  **Skill Search**: Allows potential clients to search for freelancers based on verified skills demonstrated through completed projects.
+5.  **Verified Users**: Mandatory wallet and identity verification for both clients and freelancers.
+6.  **Badge System**: Minting and display of skill badges earned from successful project completions.
 
-***
+---
 
-## Dependencies and Technologies Used (Tech Stack)
-
-The project utilizes a modern, robust, and scalable technology stack focused on Python development and blockchain integration.
+## 🚀 Dependencies and Technologies Used
 
 | Category | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Backend/Core Logic** | **Python** (v3.10+) | Main application logic, API handling, and data processing. |
-| **Web Framework** | **FastAPI** / **Flask** | Building the RESTful API for external communication and frontend integration. |
-| **Blockchain Client** | **Web3.py** | Interacting with the Ethereum Virtual Machine (EVM) compatible blockchain network. |
-| **Smart Contracts** | **Solidity** (v0.8.x) | Defining the core logic for transaction recording and scoring mechanisms. |
-| **Database** | **PostgreSQL** (or similar) | Storing off-chain structured data and user profiles. |
-| **Environment** | **Docker** | Containerization for easy setup and deployment. |
+| **Blockchain** | **Moonbeam Parachain** | EVM-compatible environment on Polkadot for smart contract deployment. |
+| **Wallet/Auth** | **MetaMask** | Primary user authentication and transaction signing. |
+| **Smart Contract** | **Solidity** | Language used for writing the core reputation logic. |
+| **Frontend** | React, Next.js, Web3.js | User interface for profile management, project submission, and review. |
+| **Data Storage** | **IPFS** (or similar) | Decentralized storage for project deliverables and metadata. |
 
-***
+---
 
-## Project Walkthrough
+## ⚙️ Smart Contract Functions (Solidity)
 
-| Section | Description |
+The core business logic is managed by the following key functions:
+
+| Function Name | Description |
 | :--- | :--- |
-| **Images/Gifs** | *Space for adding screenshots of the application UI/Dashboard.* |
-| **Video Walkthrough** | *Space for embedding your optional 2–5 minute short demo video showcasing project functionality and explaining its purpose.* |
+| `addProject` | Allows a verified freelancer to submit a new project, including its cryptographic hash proof. |
+| `submitReview` | Enables a verified client to submit a review for a completed project. (No approval required). |
+| `setUserVerified` | Function used by the contract owner or an oracle to mark a user's address as verified. |
+| `getAllProjects` | Retrieves the list of all submitted projects on the network. |
+| `getAllReviews` | Retrieves all reviews associated with a specific project or user. |
+| `badgeMinting` | Handles the logic for minting and assigning skill badges to the freelancer. |
 
-***
+---
 
-## Instructions for Setup and Usage
+## 🌐 Polkadot Relevance & Web3 Integration
 
-Follow these steps to set up and run the Chain-Cred project locally.
+ChainCred is built to leverage the **Web3 ecosystem**, specifically Polkadot's interoperable network structure:
+
+* **Built on Moonbeam**: We utilize the Moonbeam Parachain, which provides **EVM compatibility**, allowing us to deploy standard Solidity smart contracts while operating within the Polkadot ecosystem.
+* **Web3 RPC**: All client-side interactions (MetaMask) communicate with the Moonbeam network via standard Web3 RPC calls.
+* **Polkadot User Metric Features**: The six core features (On-chain portfolio, Client-authenticated reviews, Hash proofs, Skill search, Verified users, and Badge system) are the on-chain metrics used to define a freelancer's reputation and are directly tied to Polkadot's vision of secure, verifiable digital identity.
+
+---
+
+## 🔨 Instructions for Setup and Usage
 
 ### Prerequisites
 
-* **Python 3.10+**
-* **pip** (Python package installer)
-* **Git**
-* **Node.js & npm** (Required for Smart Contract compilation/deployment tools like Hardhat/Truffle)
+* Node.js (v18+)
+* Yarn or npm
+* **MetaMask** browser extension configured for the **Moonbeam Development Network** (or a testnet).
 
-### How to Run
+### Local Installation
 
-1.  **Clone the Repository**
+1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/SR-005/chain-cred.git](https://github.com/SR-005/chain-cred.git)
     cd chain-cred
     ```
 
-2.  **Install Python Dependencies**
-    It is highly recommended to use a virtual environment.
+2.  **Install dependencies:**
     ```bash
-    # Create and activate virtual environment
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-    # Installing commands (Install the required Python packages)
-    pip install -r requirements.txt
+    yarn install
+    # or npm install
     ```
 
-3.  **Setup Environment Variables**
-    Create a `.env` file in the root directory and add configuration, including your database and local blockchain connection details.
-    ```
-    # Example .env content
-    DB_URL="postgresql://user:password@localhost:5432/chain_cred_db"
-    BLOCKCHAIN_RPC_URL="[http://127.0.0.1:8545](http://127.0.0.1:8545)" # e.g., Ganache or local testnet
-    WALLET_PRIVATE_KEY="..."
-    ```
+3.  **Smart Contract Setup (Optional: For local testing)**
+    * Navigate to the smart contract directory.
+    * Compile and deploy the contracts to your local development environment (e.g., Hardhat or Ganache).
+    * Update the contract address in the frontend configuration file.
 
-4.  **Python Run Command (Start the Application)**
+4.  **Run the application:**
     ```bash
-    # Run the backend API server
-    python main.py
-    # or if using FastAPI/Uvicorn
-    # uvicorn app.main:app --reload
+    yarn dev
+    # or npm run dev
     ```
-    The application will typically be accessible at `http://localhost:8000`.
 
-***
+The application will typically start at `http://localhost:3000`. Connect your MetaMask wallet to the Moonbeam network to begin using ChainCred.
 
-## License
+---
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+## 🖼️ Media Showcase
+
+| Description | Link/Image Placeholder |
+| :--- | :--- |
+| **Demo Video** | Insert YouTube or Vimeo link to project demo video here. |
+| **App Screenshot 1 (Profile)** | Insert image of the Decentralized Profile here. |
+| **App Screenshot 2 (Verification)** | Insert image of the Project Hash Proof verification interface here. |
+
+---
+
+## 🧑‍💻 Team
+
+This project was developed by:
+
+* Allen Jude
+* Sreeram V Gopal
+* Alwin Emmanuel Sebastian
+* Arjun Shiju
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the official license link for details:
+[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/)
